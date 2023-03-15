@@ -1,365 +1,302 @@
 /*importar fuentes*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+/*variables de color*/
 /*Reset*/
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*estilos generales*/
-
 body,
 html {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-  
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-
 /*--------------------------Barra de redes sociales----------------------*/
-
 .container-redes {
-    padding: 15px;
-    text-align: right;
-    width: 100%;
-    height: 50px;
-    background-color: #f5f6f7;
-    border-bottom: 1px solid #d7d8d8;
+  padding: 15px;
+  text-align: right;
+  width: 100%;
+  height: 50px;
+  background-color: #f5f6f7;
+  border-bottom: 1px solid #d7d8d8;
 }
 
 .container-redes a {
-    margin-right: 50px;
-    margin-top: 5px;
+  margin-right: 50px;
+  margin-top: 5px;
 }
 
 .container-redes i {
-    color: #333;
+  color: #333;
 }
 
-
-
-
 /*--------------------------Barra de navegacion----------------------*/
-
-
 .navbar {
-    padding: 2rem;
-    background-color: #f5f6f7;
+  padding: 2rem;
+  background-color: #f5f6f7;
 }
 
 .navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*--------------------------Estilos pagina blog-------------------------*/
+.construccion img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*---------------Estilos de formulario de contacto-------------------------*/
+.contacto__info {
+  margin-bottom: 25px;
+}
+
+.contact__info--text {
+  padding: 10px;
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+
+.contact__iconos {
+  font-size: 1.3rem;
+}
+
+.contact__info {
+  border-bottom: 1px solid #00c8ff;
+  margin-bottom: 30px;
+}
+
+.contact__info i {
+  margin-left: 7px;
+  font-size: 1.3rem;
+}
+
+.form__contenedor {
+  text-align: center;
+}
+
+.form {
+  max-width: 500px;
+  display: block;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding: 35px;
+  width: 100%;
+}
+
+.form__label {
+  text-align: left;
+}
+
+.form__label, .form__input-txt, .form__textarea {
+  max-width: 100%;
+  width: 100%;
+}
+
+.form__input-txt {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form__textarea {
+  min-height: 100px;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.boton {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/*--------------------------footer------------------------*/
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: #7b7b7b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+
+.footer .copy {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer .copy span {
+  font-size: 20px;
+}
+
+.columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.columnas div {
+  width: 350px;
+  margin-top: 15px;
+  border: 1px solid rgb(58, 59, 57);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.enlace__redes i {
+  font-size: 28px;
+  margin: 10px;
+}
+
+.columnas__sitio a {
+  display: block;
+}
+
+.copy a {
+  color: rgb(117, 161, 255);
 }
 
 /*--------------------------Slider de Bootstrap-------------------------*/
 .slide {
-    background-color: #333;
-    overflow: hidden;
-    width: 100%;
-    height: 150px;
-    margin-top: 25px;
-
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  margin-top: 25px;
 }
 
 .slide img {
-    height: auto;
-    opacity: .5;
-
+  height: auto;
+  opacity: 0.5;
 }
 
 /*--------------------------Bootstrap Grid-------------------------*/
-
-
 /*Servicios*/
 .servicios__titulo {
-    width: 100%;
-    text-align: center;
-    
+  width: 100%;
+  text-align: center;
 }
+
 .servicios__titulo h2 {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
 .servicios img {
-    box-shadow: 5px 5px 5px 1px rgb(192, 191, 191);
-    width: 100%;
-    max-height: 220px;
-    max-width: 350px;
-    margin-top: 50px;
+  box-shadow: 5px 5px 5px 1px rgb(192, 191, 191);
+  width: 100%;
+  max-height: 220px;
+  max-width: 350px;
+  margin-top: 50px;
 }
 
 .servicios p {
-    padding: 10px;
-    max-width: 350px;
+  padding: 10px;
+  max-width: 350px;
 }
+
 .servicios-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /*Clientes*/
-
 .clientes {
-    padding: 20px;
-    margin-bottom: 20px;
-    
-
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .clientes__titulo {
-    text-align: center;
-
+  text-align: center;
 }
+
 .clientes__titulo h2 {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
-.clientes-item img{
-    margin-top: 30px;
-    width: 120px;
+.clientes-item img {
+  margin-top: 30px;
+  width: 120px;
 }
+
 .clientes-item {
-  
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-/*--------------------------footer------------------------*/
-
-.footer {
-    width: 100%;
-    background-color: #333;
-    color: #7b7b7b;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
-    text-align: center;
-    margin: 0;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer a {
-    color: #7b7b7b;
-    text-decoration: none;
-}
-.footer .copy {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-
-}
-
-.footer .copy span {
-    font-size: 20px;
-}
-
-.columnas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    
-}
-
-.columnas div {
-    width: 350px;
-    margin-top: 15px;
-    border: 1px solid rgb(58, 59, 57);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-
-.enlace__redes i {
-    font-size: 28px;
-    margin: 10px;
-}
-.columnas__sitio a{
-    display: block;
-
-}
-.copy a {
-    color: rgb(117, 161, 255);
-}
-
-
-/*--------------------------Estilos de formulario de contacto-------------------------*/
-.contacto__info {
-    margin-bottom: 25px;
-
-}
-.contact__info--text {
-    padding: 10px;
-    padding-top: 0;
-    margin-bottom: 30px;
-  
-}
-.contact__iconos {
-    font-size: 1.3rem;
-}
-.contact__info {
-    border-bottom: 1px solid #00c8ff;
-    margin-bottom: 30px;
-}
-.contact__info i {
-    margin-left: 7px;
-    font-size: 1.3rem;
-}
-.form__contenedor {
-    text-align: center;
-    
-}
-
-
-
-.form {
-   
-
-    max-width: 500px;
-    display: block;
-    align-items: center;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding: 35px;
-    width: 100%;
-   
-        
-}
-
-.form__label {
-    text-align: left;
-}
-.form__label, .form__input-txt, .form__textarea {
-    max-width: 100%;
-    width: 100%;
-   
-}
-.form__input-txt {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.form__textarea {
-    min-height: 100px;
-    
-    max-width: 100%;
-    max-height: 200px;
-}
-.boton {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 350px;
-    padding: 10px;
-    background-color: #ededed;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
- 
-  
-    
-}
-
-/*--------------------------Estilos pagina blog-------------------------*/
-
-.construccion img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%
-    
-}
-
-
-
-
 
 /*--------------------------adaptable (Responsive)-------------------------*/
-
-
-@media screen and (min-width:767px) {
-
-    /*slider*/
-    .slide {
-        overflow: hidden;
-        width: 100%;
-        height: 550px;
-        margin-top: 25px;
-
-    }
-
-    .slide img {
-        height: auto;
-        margin-top: -150px;
-
-    }
-
-    .columnas {
-        margin-left: 30px;
-    }
-    .construccion img {
-        max-width: 700px;
-        margin: 0 auto;
-
-        
-    }
-  
-
+@media screen and (min-width: 767px) {
+  /*slider*/
+  .slide {
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    margin-top: 25px;
+  }
+  .slide img {
+    height: auto;
+    margin-top: -150px;
+  }
+  .columnas {
+    margin-left: 30px;
+  }
+  .construccion img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
-
-@media screen and (min-width:490px){
-    .contact__info {
-        border-right: 1px solid #00c8ff;
-        border-bottom: none;
-        margin-bottom: 30px;
-    }
-    .slide {
-        height: 350px;
-    }
-   
-
+@media screen and (min-width: 490px) {
+  .contact__info {
+    border-right: 1px solid #00c8ff;
+    border-bottom: none;
+    margin-bottom: 30px;
+  }
+  .slide {
+    height: 350px;
+  }
 }
-
-@media screen and (max-width:490px) {
-
-    .nepal,
-    .dhelpy,
-    .inggoo {
-        width: 100%;
-    }
-  
-    
-    
-
+@media screen and (max-width: 490px) {
+  .nepal,
+  .dhelpy,
+  .inggoo {
+    width: 100%;
+  }
 }
-
-@media screen and (max-width:767px) {
-    .navbar-brand {
-        display: none;
-    }
-    
-   
-
-
-}
-
-
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}/*# sourceMappingURL=estilos.css.map */

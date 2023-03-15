@@ -1,0 +1,65 @@
+
+/*--------------------------footer------------------------*/
+
+.footer {
+    width: 100%;
+    background-color: $color-footer;
+    color: $color-fuente-footer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    margin: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #7b7b7b;
+    text-decoration: none;
+}
+.footer .copy {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.footer .copy span {
+    font-size: 20px;
+}
+
+.columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.columnas div {
+    width: 350px;
+    margin-top: 15px;
+    border: 1px solid rgb(58, 59, 57);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.enlace__redes i {
+    font-size: 28px;
+    margin: 10px;
+}
+.columnas__sitio a{
+    display: block;
+
+}
+.copy a {
+    color: rgb(117, 161, 255);
+}

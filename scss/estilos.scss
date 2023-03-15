@@ -1,0 +1,126 @@
+/*importar fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+
+
+@import "variables"; // en _variables he definido todas las condiciones que voy a utilizar dentro de los estilos*/
+
+
+
+
+/*Reset*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*estilos generales*/
+
+body,
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+/*--------------------------Barra de redes sociales----------------------*/
+
+.container-redes {
+    padding: 15px;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    background-color: $color-fondo;
+    border-bottom: 1px solid $color-bordes;
+}
+
+.container-redes a {
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.container-redes i {
+    color: $color-footer;
+}
+
+
+/*--------------------------Barra de navegacion----------------------*/
+
+
+.navbar {
+    padding: 2rem;
+    background-color: $color-fondo;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+//--------------------importar los modulos de estilos-----------------------------
+
+
+@import "estilos-nosotros";
+@import "estilos-servicios";
+@import "estilos-blog";
+@import "estilos-contacto";
+@import "estilos-footer";
+@import "estilos-bootstrap";
+
+/*--------------------------adaptable (Responsive)-------------------------*/
+
+
+@media screen and (min-width:767px) {
+    
+    /*slider*/
+    .slide {
+        overflow: hidden;
+        width: 100%;
+        height: 550px;
+        margin-top: 25px;
+    }
+
+    .slide img {
+        height: auto;
+        margin-top: -150px;
+    }
+    .columnas {
+        margin-left: 30px;
+    }
+    .construccion img {
+        max-width: 700px;
+        margin: 0 auto;   
+    }
+}
+
+@media screen and (min-width:490px){
+    .contact__info {
+        border-right: 1px solid #00c8ff;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+    .slide {
+        height: 350px;
+    }
+}
+@media screen and (max-width:490px) {
+
+    .nepal,
+    .dhelpy,
+    .inggoo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+

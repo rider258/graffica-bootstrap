@@ -1,9 +1,63 @@
-/*--------------------------Estilos pagina blog-------------------------*/
-
-.construccion img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%
+/*--------------------------Estilos página blog-------------------------*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.blog__contenedor {
+    width: 100%;
+   }
+.noticias {
+    width: 100%;
+    text-align: center;
     
+}
+.noticias__contenedor {
+    background-color: $color-fondo;
+}
+.noticias__titulo {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin:  10px 0;
+}
+.noticias__contenedor img {
+    width: 100%;
+}
+
+.blog__titulo {
+    width: 100%;
+    height: 100px;
+    background-color: orangered;
+    padding: 30px 20px;
+    color: #fff;
+    
+}
+
+.blog p {
+    padding: 10px 10px 0 10px;
+    max-width: 500px;
+    
+}
+.blog__articulo {
+    width: 100%;
+    display: block;
+    background-color: $color-fondo;
+    margin-bottom: 20px;
+}
+.blog__articulo__titulo {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.blog__articulo a {
+    background-color: $color-fondo;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+.blog__articulo a:hover {
+    text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-/*Estilos generales de la pagina de servicios*/
+/*Estilos generales de la pagina de nosotros*/
 
 /*importar variable*/
 @import 'variables';
@@ -91,50 +91,4 @@
     border-radius: 10px;
     width: 100%;
   
-}
-
-
-.descripcion {
-    background-color: $color-fondo;
-   
-    
-    
-    
-}
-.servicio {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-  
-}
-.tarjeta {
-    text-align: center;
-    padding: 20px;
-    box-shadow: 5px 5px 10px  rgba(198, 198, 198, 0.1);
-    background-color: rgb(231, 230, 230);
-    width: 100%;
-    max-width: 900px;
-    margin: 3px;
-    border-radius: 5px;
-}
-.tarjeta:hover {
-    cursor: pointer;
-    background-image: linear-gradient(rgb(231, 230, 230), rgb(204, 202, 202));
-    transform: scale(1.03);
-
-}
-.desarrollo__titulo {
-    width: 100%;
-  
-}
-.tarjeta p {
-    text-align: left;
-}
-.lista li {
-    text-align: left;
-}
-.lista {
-    font-weight: 700;
 }

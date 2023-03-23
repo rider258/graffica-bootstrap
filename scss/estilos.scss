@@ -62,7 +62,7 @@ html {
 }
 
 
-//--------------------importar los modulos de estilos-----------------------------
+/*--------------------importar los modulos de estilos-----------------------------*/
 
 
 @import "estilos-nosotros";
@@ -74,6 +74,86 @@ html {
 
 /*--------------------------adaptable (Responsive)-------------------------*/
 
+/*se corrige el orden del media query como se sugirio en las notas de retroalimentación de la segunda pre-entrega*/
+
+@media screen and (min-width:490px){
+    .contact__info {
+        border-right: 1px solid #00c8ff;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+    .slide {
+        height: 350px;
+    }
+
+    /*responsive pag-servicios*/
+    .banner__titulo {
+        font-size: 30px; 
+    }
+    .banner__txt {
+        display: block;
+        margin-left: 30px;
+        
+    }
+    .banner__txt a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+        position: relative;   
+    }
+
+    .info__columna {
+        width: 30%;
+    }
+     /*responsive seccion */
+
+    .descripcion {
+        text-align: left;   
+    }
+    .descripcion__img__contenedor{
+        max-width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    #descripcion__img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 800px;  
+    }
+
+    /*--------------página Blog-----------------------------*/
+
+
+    .noticias {
+        display: flex;
+        width: 100%;
+       
+    }
+    .noticias__contenedor {
+       
+        width: 50%;
+    }
+    .blog {
+        margin-left: 15px;
+        width: 50%;
+       
+    }
+   
+
+   
+    
+    
+ 
+
+   
+
+}
 
 @media screen and (min-width:767px) {
     
@@ -92,21 +172,83 @@ html {
     .columnas {
         margin-left: 30px;
     }
+
+    //eliminar cuando se termine por completo
     .construccion img {
         max-width: 700px;
         margin: 0 auto;   
     }
+    .banner__titulo {
+        font-size: 50px; 
+    }
+    .banner__txt {
+        font-size: 30px;   
+    }
+    .banner__nosotros {
+        height: 450px;
+        overflow: hidden;   
+    }
+    .descripcion {
+        padding: 30px;
+    }
+    .descripcion__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .descripcion__img__contenedor{
+        max-width: 50%;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    .descripcion__txt {
+        width: 50%;
+        
+    }
+    .blog {
+        width: 40%;
+    }
+    .noticias__contenedor {
+        width: auto;
+    }
+
+    /*------------------responsive servicios-------------*/
+
+    .tarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .desarrollo__titulo {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .tarjeta p {
+        width: 50%;
+        padding: 0;
+    }
+    .descripcion {
+        justify-content: center;  
+    }
+
+
+    /*nosotros*/
+
+
+    .equipo {
+        display: flex;
+    }
 }
 
-@media screen and (min-width:490px){
-    .contact__info {
-        border-right: 1px solid #00c8ff;
-        border-bottom: none;
-        margin-bottom: 30px;
+
+
+@media screen and (max-width:767px) {
+    .navbar-brand {
+        display: none;
     }
-    .slide {
-        height: 350px;
-    }
+    
 }
 @media screen and (max-width:490px) {
 
@@ -115,12 +257,10 @@ html {
     .inggoo {
         width: 100%;
     }
+  
+  
 }
 
-@media screen and (max-width:767px) {
-    .navbar-brand {
-        display: none;
-    }
-}
+
 
 

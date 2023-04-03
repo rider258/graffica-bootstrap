@@ -62,16 +62,393 @@ html {
 }
 
 
-/*--------------------importar los modulos de estilos-----------------------------*/
+/*--Corrección indicada por el tutor... se elimina la importación de hojas de estilo individuales y se implementa un sola importación de variables que contienen los colores. 
 
 
-@import "estilos-nosotros";
-@import "estilos-servicios";
-@import "estilos-blog";
-@import "estilos-contacto";
-@import "estilos-footer";
-@import "estilos-bootstrap";
+//@import "estilos-nosotros";
+//@import "estilos-servicios";
+//@import "estilos-blog";
+//@import "estilos-contacto";
+//@import "estilos-footer";
+//@import "estilos-bootstrap";
 
+*/
+
+
+/*--------------------------------------Página Nosotros----------------------------*/
+.principal h1 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+.texto {
+    padding: 20px;
+}
+.photo__contenedor {
+    text-align: center;
+    max-width: 300px;
+    overflow: hidden;
+}
+.foto__equipo {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.negrita {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.foto__equipo img{
+    width: 100%;
+}
+
+.foto__equipo p{
+    max-width: 450px;
+    margin-top: 15px;
+}
+/*--------------------------------------Página Servicios----------------------------*/
+.banner__nosotros {
+    margin-top: 0;
+    position: relative;
+}
+.img__contenedor {
+    width: 100%;
+    height: auto;
+    background: #000;
+}
+.nosotros__img {
+    opacity: .5;
+    width: 100%;
+    margin-top: 0;
+}
+.banner__nosotros .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translatey(-50%);
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+.banner__txt {
+    display: none;
+}
+/*--------------------------Sección info Página Servicios---------------------*/
+.info__contenedor {
+    margin-top: 30px;
+    width: 100%;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.info__contenedor img{
+    width: 100%;
+    max-width: 450px;
+}
+.info__columna {
+    color: #fff;
+    text-align: center;
+    background-color: $color-ventanas;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+}
+.info__txt {
+    padding: 5px;
+    text-align: left;
+    font-size: 1rem;
+}
+.descripcion {
+    width: 100%;
+    text-align: center;
+    background-color: $color-fondo;
+}
+.descripcion__txt {
+    max-width: 500px;
+    color: $color-footer;
+    text-align: left;
+    margin-top: 25px;
+    width: 100%;
+}
+.descripcion__img__contenedor{
+    width: 100%;
+    text-align: center;
+}
+#descripcion__img {
+    border-radius: 10px;
+    width: 100%;
+}
+.descripcion {
+    background-color: $color-fondo;
+}
+.servicio {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px  rgba(198, 198, 198, 0.1);
+    background-color: rgb(231, 230, 230);
+    width: 100%;
+    max-width: 900px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.tarjeta:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(231, 230, 230), rgb(204, 202, 202));
+    transform: scale(1.03);
+}
+.desarrollo__titulo {
+    width: 100%;  
+}
+.tarjeta p {
+    text-align: left;
+}
+.lista li {
+    text-align: left;
+}
+.lista {
+    font-weight: 700;
+}
+/*--------------------------------------Página Blog----------------------------*/
+.blog__contenedor {
+    width: 100%;
+   }
+.noticias {
+    width: 100%;
+    text-align: center; 
+}
+.noticias__contenedor {
+    background-color: $color-fondo;
+}
+.noticias__titulo {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin:  10px 0;
+}
+.noticias__contenedor img {
+    width: 100%;
+}
+.blog__titulo {
+    width: 100%;
+    height: 100px;
+    background-color: orangered;
+    padding: 30px 20px;
+    color: #fff;
+}
+.blog p {
+    padding: 10px 10px 0 10px;
+    max-width: 500px; 
+}
+.blog__articulo {
+    width: 100%;
+    display: block;
+    background-color: $color-fondo;
+    margin-bottom: 20px;
+}
+.blog__articulo__titulo {
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.blog__articulo a {
+    background-color: $color-fondo;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+.blog__articulo a:hover {
+    text-decoration: underline;
+}
+/*--------------------------------------Página Contacto----------------------------*/
+
+.contacto__info {
+    margin-bottom: 25px;
+}
+.contact__info--text {
+    padding: 10px;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+.contact__iconos {
+    font-size: 1.3rem;
+}
+.contact__info {
+    border-bottom: 1px solid #00c8ff;
+    margin-bottom: 30px;
+}
+.contact__info i {
+    margin-left: 7px;
+    font-size: 1.3rem;
+}
+.form__contenedor {
+    text-align: center;
+}
+.form {
+    max-width: 500px;
+    display: block;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding: 35px;
+    width: 100%;   
+}
+.form__label {
+    text-align: left;
+}
+.form__label, .form__input-txt, .form__textarea {
+    max-width: 100%;
+    width: 100%;
+}
+.form__input-txt {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.form__textarea {
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 200px;
+}
+.boton {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    background-color: #ededed;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;   
+}
+/*------------------------------------footer-----------------------------------*/
+.footer {
+    width: 100%;
+    background-color: $color-footer;
+    color: $color-fuente-footer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+.footer p {
+    margin: 0;
+}
+.footer a {
+    color: #7b7b7b;
+    text-decoration: none;
+}
+.footer .copy {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer .copy span {
+    font-size: 20px;
+}
+.columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+.columnas div {
+    width: 350px;
+    margin-top: 15px;
+    border: 1px solid rgb(58, 59, 57);
+    border-radius: 5px;
+    padding: 10px;
+}
+.enlace__redes i {
+    font-size: 28px;
+    margin: 10px;
+}
+.columnas__sitio a{
+    display: block;
+}
+.copy a {
+    color: rgb(117, 161, 255);
+}
+/*--------------------------Slider de Bootstrap-------------------------*/
+.slide {
+    background-color: $color-footer;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-top: 25px;
+}
+.slide img {
+    height: auto;
+    opacity: .5;
+}
+
+/*--------------------------Bootstrap Grid-------------------------*/
+
+/*Servicios*/
+.servicios__titulo {
+    width: 100%;
+    text-align: center;  
+}
+.servicios__titulo h2 {
+    margin-top: 45px;
+}
+.servicios img {
+    box-shadow: 5px 5px 5px 1px $color-sombra;
+    width: 100%;
+    max-height: 220px;
+    max-width: 350px;
+    margin-top: 50px;
+}
+.servicios p {
+    padding: 10px;
+    max-width: 350px;
+}
+.servicios-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/*Clientes*/
+
+.clientes {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.clientes__titulo {
+    text-align: center;
+}
+.clientes__titulo h2 {
+    margin-top: 25px;
+}
+.clientes-item img{
+    margin-top: 30px;
+    width: 120px;
+}
+.clientes-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+}
 /*--------------------------adaptable (Responsive)-------------------------*/
 
 /*se corrige el orden del media query como se sugirio en las notas de retroalimentación de la segunda pre-entrega*/
@@ -143,15 +520,7 @@ html {
         margin-left: 15px;
         width: 50%;
        
-    }
-   
-
-   
-    
-    
- 
-
-   
+    } 
 
 }
 

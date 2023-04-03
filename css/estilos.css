@@ -46,7 +46,18 @@ html {
   justify-content: space-between;
 }
 
-/*--------------------importar los modulos de estilos-----------------------------*/
+/*--Corrección indicada por el tutor... se elimina la importación de hojas de estilo individuales y se implementa un sola importación de variables que contienen los colores. 
+
+
+//@import "estilos-nosotros";
+//@import "estilos-servicios";
+//@import "estilos-blog";
+//@import "estilos-contacto";
+//@import "estilos-footer";
+//@import "estilos-bootstrap";
+
+*/
+/*--------------------------------------Página Nosotros----------------------------*/
 .principal h1 {
   width: 100%;
   text-align: center;
@@ -85,9 +96,7 @@ html {
   margin-top: 15px;
 }
 
-/*Estilos generales de la pagina de servicios*/
-/*importar variable*/
-/*variables de color*/
+/*--------------------------------------Página Servicios----------------------------*/
 .banner__nosotros {
   margin-top: 0;
   position: relative;
@@ -119,7 +128,7 @@ html {
   display: none;
 }
 
-/*--------------------------estilos info---------------------*/
+/*--------------------------Sección info Página Servicios---------------------*/
 .info__contenedor {
   margin-top: 30px;
   width: 100%;
@@ -221,12 +230,7 @@ html {
   font-weight: 700;
 }
 
-/*--------------------------Estilos página blog-------------------------*/
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
+/*--------------------------------------Página Blog----------------------------*/
 .blog__contenedor {
   width: 100%;
 }
@@ -291,7 +295,7 @@ body, html {
   text-decoration: underline;
 }
 
-/*---------------Estilos de formulario de contacto-------------------------*/
+/*--------------------------------------Página Contacto----------------------------*/
 .contacto__info {
   margin-bottom: 25px;
 }
@@ -361,7 +365,7 @@ body, html {
   font-size: 1em;
 }
 
-/*--------------------------footer------------------------*/
+/*------------------------------------footer-----------------------------------*/
 .footer {
   width: 100%;
   background-color: #333;
